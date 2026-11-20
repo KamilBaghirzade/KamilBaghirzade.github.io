@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Data science projects, experience, and community work by Kamil Baghirzade.">
+<title>Indigenous mother tongues in the Canadian census | Kamil Baghirzade</title>
+<link rel="stylesheet" href="portfolio.css">
+<script src="projects.js" defer></script>
+<script src="pointer.js" defer></script>
+<script src="reader.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><div class="bar"><a class="wordmark" href="index.html" aria-label="Kamil Baghirzade, home"><span class="monogram" aria-hidden="true">KB</span><span>Kamil <strong>Baghirzade</strong></span></a><nav aria-label="Main navigation"><a href="projects.html" aria-current=page>Projects</a><a href="work.html">Work</a><a href="about.html">About</a><a class="nav-cv" href="about.html#cv">CV</a></nav></div></header>
+<main id="main"><section class="case-intro"><a href="projects.html#language">Back to projects</a><p class="eyebrow">DATA 201 · Team analysis</p><h1>Indigenous mother tongues in the Canadian census</h1><p class="lead">What can census tables tell us about Indigenous mother tongues across provinces?</p></section><section class="case-body"><article class="project"><div><h2>Project walkthrough</h2><p>DATA 201 · Group project<br>Exploring Canadian census language patterns using provincial tables.</p><span class="pill">R</span><span class="pill">readxl</span><span class="pill">ggplot2</span><span class="pill">Census data</span><div class="role"><strong>My contribution</strong><p>I proposed the project topic, completed analysis question three on Indigenous mother tongues, and contributed to the report and presentation introduction.</p></div><details open><summary>Process & technical work</summary><p>Imported provincial Excel sheets into R with readxl, extracted Indigenous mother-tongue counts and “Neither English nor French” counts, converted values to numeric, and visualized provincial comparisons with ggplot2.</p></details><details open><summary>Outcome & what I learned</summary><p>Developed an R workflow for comparing provincial population counts and derived percentages. This project also offers a valuable opportunity to revisit whether a metric answers the intended question.</p></details><details open><summary>Limitations & next steps</summary><p>The report uses first-official-language categories as a retention proxy. This does not directly measure continued use of a mother tongue at home. I would validate the variable definitions and rebuild a retention metric before presenting those percentages as retention rates.</p></details></div><div><figure><a href="language-chart.png" aria-label="Open full-size project chart"><img class="evidence" src="language-chart.png" alt="Original Indigenous language comparison charts from the DATA 201 report"></a><figcaption class="small">Original report, page 15. Percentages reflect the report’s proxy definition; they should not be interpreted as validated home-language retention.</figcaption></figure></div></article><div class="case-note"><h2>What to look for</h2><p>I proposed the topic and owned analysis question three. The chart uses first official language spoken as a proxy. A direct measure would compare mother tongue with language spoken at home.</p></div></section><section class="resources"><h2>Project resources</h2><details class="pdf-reader">
+<summary>Read project report (PDF)</summary>
+<div class="pdf-content">
+<a href="reports/DATA-201-Census-Report.pdf" target="_blank" rel="noopener">Open PDF in a new tab</a>
+<div class="document-reader" data-pages="21" data-folder="reader/DATA-201-Census-Report">
+<div class="reader-controls" hidden>
+<button type="button" data-step="-1">Previous</button><span class="page-status" aria-live="polite">Page 1 of 21</span><button type="button" data-step="1">Next</button>
+<label>Zoom <select><option value="100">100%</option><option value="150">150%</option><option value="200">200%</option></select></label>
+</div>
+<div class="reader-viewport" tabindex="0" aria-label="Document page"><img loading="lazy" src="reader/DATA-201-Census-Report/1.webp" alt="Page 1 of 21"></div>
+<p class="reader-text"><a href="reader/DATA-201-Census-Report/text.txt" target="_blank" rel="noopener">Read selectable text</a></p>
+</div>
+</div>
+</details><h3>Dataset</h3><ul><li><a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810016901">Statistics Canada 2021 Census table 98-10-0169-01</a></li></ul></section></main>
+<footer><div class="bar"><span>Kamil Baghirzade · Data Science</span><div class="footer-links"><a href="https://www.linkedin.com/in/kamilbaghirzade/"><span class="social-icon linkedin-icon" aria-hidden="true">in</span>LinkedIn</a><a href="contact.html">Contact</a></div></div></footer>
+</body>
+</html>

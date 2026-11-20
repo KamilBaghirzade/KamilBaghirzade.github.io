@@ -1,0 +1,318 @@
+Page 1
+
+CPSC 383 - Explorations in Artificial Intelligence and Machine Learning
+
+                              Final Project
+               —
+
+
+
+
+
+     RentSafe AI
+
+
+ A Hybrid Approach to Detecting Online Rental Scams
+
+
+
+
+
+                   Kamil Baghirzade
+
+
+
+
+               —
+
+                           Spring 2026
+
+                       June 15, 2026
+
+Page 2
+
+Problem Description
+
+Online rental scams are a serious real-world problem because they target people when
+they are already under pressure. In a competitive housing market, a listing that appears
+cheap, available immediately, and easy to secure can feel like a lucky opportunity.
+Scammers exploit that pressure by posting fake or misleading rental advertisements,
+pretending to be landlords, and asking victims to send deposits or personal information
+before the renter has safely verified the property.
+
+Rental scams often imitate legitimate rental behaviour. A scammer may copy photos
+from another website, use the address of a real property, offer a rent price that is
+unusually low for the area, claim to be unavailable for an in-person viewing, and ask for
+payment before a lease is properly signed. The U.S. Federal Trade Commission warns
+that duplicate advertisements, pressure to send money before viewing a property, and
+unusually low prices can all be warning signs of a rental scam [1]. The FBI also warns
+renters not to send funds to unknown people, not to pay for a property they have not
+seen, and to confirm the landlord’s identity through records or other verification methods
+[2]. Competition Bureau Canada gives similar warnings, explaining that scammers may
+post attractive listings with low prices, use copied photos, and claim to be outside the
+country or unable to meet in person [3].
+
+Current solutions are useful but incomplete. Rental platforms often provide report
+buttons, manual moderation, identity checks, and user education pages. Governments
+and police agencies also publish scam warnings. The RCMP explains that some rental
+scams involve fake property advertisements, demands for deposits without viewing the
+property, or requests for personal information and e-transfer before meeting in person
+[4]. These warnings help, but they place most of the burden on renters. A student,
+newcomer, or young worker may not know local rent prices or how to verify a landlord.
+Manual moderation also does not scale well when scams can be reposted across
+websites and social media groups.
+
+The opportunity is not to replace human judgment but to support it earlier. A useful
+system would identify suspicious rental listings before a renter sends money or shares
+sensitive information. This does not require artificial general intelligence. It requires a
+specialized AI tool that combines patterns from data with clear rules about known scam
+signals. Some parts of the problem are rule-based, such as a request for a deposit
+before a viewing. Other parts are pattern-based, such as repeated persuasion
+strategies, copied phrasing, unrealistic prices, or suspicious contact behaviour. Van der
+Zee, Clayton, and Anderson found that fraudulent rental advertisers often try to
+persuade victims to transfer money without seeing the property [5].
+
+This is the problem RentSafe AI aims to solve. Its goal is to give renters and rental
+platforms an early warning system for likely fake listings. The system would not label a
+listing as definitely fraudulent. Instead, it would produce a risk score, explain the main
+reasons for that score, and recommend verification before any payment is made.
+
+Page 3
+
+Proposed Solution
+
+RentSafe AI would be a hybrid AI system that analyzes online rental listings and
+classifies them as low risk, medium risk, or high risk. The machine learning component
+would learn patterns from legitimate and fraudulent listings, while the symbolic
+component would apply explicit rules based on known scam warning signs. The hybrid
+design is important because a purely rule-based system may miss new scam patterns,
+while a purely machine-learning system may be less transparent and harder to trust.
+
+The input would be a rental listing. A listing could include rent price, location, number of
+bedrooms, text description, photos, posting date, poster account information, contact
+method, and message content. The system would convert these details into feature
+vectors. Numerical features could include rent price, number of images, account age,
+number of similar listings by the same account, and the difference between the listed
+price and estimated local market price. Text features could include phrases such as
+“urgent,” “send deposit now,” “out of country,” “no viewing possible,” or “wire transfer.”
+Image features could include whether the same photo appears in multiple listings or
+whether the photos seem inconsistent with the stated location.
+
+For the machine learning component, the main task would be supervised classification.
+The training data would consist of listings labelled as legitimate, suspicious, or
+confirmed scam. At scale, data could come from rental-platform partnerships using user
+reports, confirmed moderation outcomes, verified landlord samples,
+consumer-protection examples, and research datasets. To avoid unreliable labels,
+trained moderators or consumer-protection reviewers should confirm cases using
+evidence such as duplicate photos, payment requests, inconsistent addresses, and
+message records. A model such as logistic regression, decision trees, random forests,
+or gradient-boosted trees could be used first because these models are easier to
+explain than a large neural network.
+
+The symbolic expert-system layer would encode known warning rules. The risk score
+would increase if a listing asks for a deposit before viewing, refuses an in-person or live
+video tour, lists rent far below similar nearby properties, reuses photos under different
+names or addresses, or requests payment through unusual or irreversible methods.
+These rules would not prove fraud by themselves, but they would provide clear signals
+that can be explained to the user.
+
+RentSafe AI would compare each new listing’s address, images, text, and price against
+nearby rentals and known scam patterns. Using heuristics such as unusually low rent,
+repeated images, or payment requests, it would prioritize suspicious cases and return a
+risk score with a short explanation. Low risk would mean no strong warning signs were
+found, medium risk would recommend verification, and high risk would warn the user
+not to send money until human review or independent confirmation occurs. The system
+would be evaluated using accuracy, precision, recall, and analysis of false positives and
+false negatives because missed scams could harm renters, while false alarms could
+unfairly affect legitimate landlords.
+
+Page 4
+
+Challenges
+
+Correctness and accuracy would be the most important concern because RentSafe AI
+deals with decisions that can affect people financially. If the system produces a false
+negative, a scam listing may appear safe and a renter could send money or personal
+information. If the system produces a false positive, a legitimate landlord or renter could
+be harmed because the listing may be hidden, delayed, or treated with suspicion. Both
+errors matter, but false negatives may lead to direct financial loss, while false positives
+may cause unfair inconvenience or reputational harm. This makes accuracy more
+complicated than simply getting the highest percentage of correct predictions, because
+the system must consider the real-world cost of each mistake.
+
+This concern arises in the classification model, the rule-based system, and the data
+collection process. If the training data contains mostly obvious scams, the system may
+fail to detect more realistic scams. If the data comes mainly from one city or platform,
+the model may not generalize well to other rental markets. A price that seems
+suspiciously low in Toronto may not mean the same thing in a smaller city. The
+rule-based system can also be too strict, since some legitimate landlords may be
+temporarily unavailable for in-person viewings. Scammers may also change their
+wording once common warning signs become known, so the system must be tested
+against newer examples rather than only older scam patterns.
+
+To tackle this issue, RentSafe AI should be a warning and review system, not an
+automatic judge. The model should be trained and tested on listings from different cities,
+price ranges, housing types, and platforms. Evaluation should include precision and
+recall, not only overall accuracy. The system should also track false positives and false
+negatives after deployment so feedback can improve future versions. Confidence
+thresholds would help because a listing should only be marked high risk when there are
+multiple strong warning signs.
+
+Another way to reduce accuracy problems is to separate warnings from final actions. A
+high-risk score should not automatically remove a listing unless a human moderator
+confirms the issue. This matters because rental situations can have unusual but
+legitimate explanations, such as a landlord travelling, a shared unit having lower rent, or
+a property manager reusing similar photos. Human review would let the system warn
+users early without making overconfident decisions.
+
+Bias is also a serious concern because rental markets already involve unequal
+treatment. The AI might wrongly flag listings from small landlords, immigrants, people
+with imperfect English, or landlords in cheaper neighbourhoods. A model trained mostly
+on polished corporate listings might treat informal writing as suspicious, while a model
+trained mostly on expensive markets might treat lower rent as suspicious even when it
+is normal for a smaller area. Features such as grammar, location, price, and account
+age may correlate with factors that should not be used to judge honesty. If these
+correlations are not checked, the system could appear technically accurate while still
+treating some groups of users unfairly.
+
+Page 5
+
+To address this, the system should be tested for uneven error rates across different
+listing types and locations. The model should not rely heavily on grammar or language
+quality alone. Informal writing may be a weak signal, but it should not be enough to
+mark a listing high risk. More objective signals, such as duplicate photos, inconsistent
+addresses, unrealistic pricing, payment-before-viewing requests, and verified user
+reports, should carry more weight. High-risk results should also go to human review
+rather than automatically banning a poster. The system should say that a listing has
+warning signs, not that a specific person is a scammer.
+
+Bias should also be monitored after deployment, not only during training. Even if the
+original model performs well, the rental market can change over time. New scam
+patterns may appear, and normal posting styles may also change. RentSafe AI should
+therefore be updated using reviewed cases rather than relying forever on the original
+dataset. This would help prevent the model from becoming outdated or unfairly
+suspicious of legitimate listings.
+
+Accountability matters because RentSafe AI could influence important housing
+decisions. A renter might decide not to apply for a unit because the system warns them.
+A rental platform might delay or remove a listing. A landlord might challenge the result.
+If the system makes a mistake, it must be clear who is responsible and how the decision
+can be reviewed. Without accountability, the AI could become a black-box authority that
+people follow without understanding. This is especially important because users may
+treat an AI-generated risk score as more objective than it really is.
+
+To deal with accountability, RentSafe AI should keep an explanation log for each risk
+score, including which signals contributed to the result and which model version made
+the prediction. Users should have an appeal process if their listing is restricted. The
+system should also have clear limits. It should not automatically contact landlords,
+collect unnecessary personal documents, or share user data with outside parties. Its
+role is to identify listing-level risk and explain it, while the final decision remains with the
+renter, platform, or human reviewer.
+
+Accountability also connects to user trust. If RentSafe AI only gives a score without
+explanation, users may either ignore it completely or trust it too much. A clear
+explanation helps users understand what the system found and what they should do
+next. For example, instead of only saying “high risk,” the system should explain that the
+listing requests payment before viewing, uses copied photos, or has a price far below
+comparable rentals. This makes the AI a decision-support tool rather than a hidden
+authority.
+
+Comparison
+
+RentSafe AI is best designed as a hybrid system because rental scam detection has
+both rule-based and pattern-based parts. A symbolic AI approach is useful when
+experts can describe warning signs clearly. For example, requesting a deposit before
+
+Page 6
+
+viewing or using the same property photos with different addresses can be written as
+rules. A rule-based expert system is transparent because it can explain which rules
+were triggered, which is valuable in a high-trust area like housing.
+
+However, a purely symbolic system would be too limited. Scammers can change their
+wording, payment requests, or posting style once they know which rules are being used.
+A fixed rule list may catch obvious scams but miss more subtle ones. It may also create
+false positives if rules are too rigid. A remote landlord is not automatically a scammer,
+and a low price is not automatically fraud. Symbolic AI works best when knowledge can
+be clearly written down, but rental scam detection also includes messy patterns in text,
+images, behaviour, and market context.
+
+A connectionist or machine-learning approach is useful because the system can learn
+patterns from data. Instead of depending only on fixed rules, it can detect combinations
+of features that are hard to describe manually. The exact wording of a scam message
+may change, but the model may still learn that certain patterns of urgency, payment
+requests, account behaviour, and copied photos are risky. Machine learning is also
+useful for ranking risk rather than making a simple yes-or-no decision.
+
+However, a purely connectionist system also has weaknesses. It may be less
+explainable, especially if it uses complex neural networks. It may learn unfair or
+meaningless patterns, such as treating certain neighbourhoods or writing styles as
+suspicious. It may also fail when scammers change tactics or when the system is used
+in a city different from the training data. Because of these risks, a pure machine-learning
+approach is not ideal.
+
+The hybrid approach is better because it combines the strengths of both methods. The
+symbolic layer handles clear warning signs and produces explanations. The machine
+learning layer handles flexible pattern recognition and risk scoring. The search
+component helps compare a listing to nearby rentals, duplicate images, repeated
+descriptions, and known scam patterns. Together, these components make the system
+more practical than either approach alone.
+
+A human-only solution would involve renters, moderators, landlords, and
+consumer-protection staff manually checking listings. Renters could search the address,
+compare prices, ask for a viewing, verify ownership, and avoid sending deposits early.
+Platform moderators could review suspicious listings reported by users. This approach
+has advantages because humans can understand context and notice unusual
+explanations.
+
+However, the human-only approach is slow and inconsistent. Many renters do not know
+what to check, especially if they are new to a city or under time pressure. Platforms may
+receive too many listings and reports for moderators to review quickly. Human reviewers
+may also miss repeated scam patterns across different platforms or cities. RentSafe AI
+has an advantage because it can screen listings earlier and at a larger scale. It can
+quickly compare prices, images, wording, and account behaviour, then help humans
+
+Page 7
+
+focus on the highest risk cases. The best solution is not AI instead of humans, but AI
+helping humans make safer decisions.
+
+The concerns would also change under a human-only solution. Correctness and bias
+would still matter because humans can also make mistakes or judge listings unfairly.
+Accountability might be clearer because a human made the decision, but consistency
+would be harder to maintain. A new concern would also arise around reviewer
+subjectivity, since individual moderators may apply different standards depending on
+personal judgment or familiarity with local rental markets. With RentSafe AI, the main
+challenge is making the system explainable, testable, and reviewable. With a
+human-only system, the main challenge is scale and consistency. Because rental
+scams can spread quickly online, a carefully designed hybrid AI system is the stronger
+option.
+
+Bibliography
+
+
+[1] Federal Trade Commission, “Rental Listing Scams,” FTC Consumer Advice. [Online].
+Available: https://consumer.ftc.gov/articles/rental-listing-scams. [Accessed: June 7,
+2026].
+
+[2] Federal Bureau of Investigation, “FBI Warns of Spike in Rental and Real Estate
+Scams,” FBI Boston Field Office, 2022. [Online]. Available:
+https://www.fbi.gov/contact-us/field-offices/boston/news/press-releases/fbi-warns-of-spik
+e-in-rental-and-real-estate-scams. [Accessed: June 9, 2026].
+
+[3] Competition Bureau Canada, “Rental Scam: No Room for Error,” Government of
+Canada, 2018. [Online]. Available:
+https://www.canada.ca/en/competition-bureau/news/2018/08/rental-scam-no-room-for-e
+rror.html. [Accessed: June 10, 2026].
+
+[4] Royal Canadian Mounted Police, “Rental Scams,” RCMP British Columbia, 2024.
+[Online]. Available: https://rcmp.ca/en/bc/safety-tips/frauds-and-scams/rental-scams.
+[Accessed: June 10, 2026].
+
+[5] S. Van der Zee, R. Clayton, and R. Anderson, “The Gift of the Gab: Are Rental
+Scammers Skilled at the Art of Persuasion?” arXiv, 2019. [Online]. Available:
+https://arxiv.org/abs/1911.08253. [Accessed: June 11, 2026].
+
+[6] Claude. Used for feedback on project ideas and solutions during the brainstorming
+phase, feedback on drafts of the final submission, proofreading and grammar checking,
+and formatting of bibliography entries. [Accessed: June 2026].

@@ -1,0 +1,76 @@
+Page 1
+
+                 Kamil Baghirzade
+                            Calgary, AB | (825) 558-1607 | kamil.bagirzade@ucalgary.ca
+
+ EDUCATION
+Bachelor of Science, Data Science (Concentration in Mathematics)                    Sep 2024 - Apr 2027
+ University of Calgary, Calgary, AB
+   • GPA: 3.71 | Faculty of Science Dean's List, 2025/2026 Academic Year
+Non-Degree Studies, Undergraduate Coursework                            May 2025 - Apr 2027
+ Athabasca University
+   • Completed additional undergraduate coursework alongside studies at the University of Calgary.
+
+ ACADEMIC PROJECTS
+Mother Tongue Language Retention Amongst Canada
+   • Built a data analysis pipeline to examine patterns in mother-tongue language retention in Canada using real-world
+    demographic data.
+   • Cleaned, explored, and visualized the data to communicate trends and support evidence-based interpretation.
+Geolocation-Based Photo Data Storage Application
+   • Developed a data storage application for organizing photos using geographical location information and structured
+    data-management concepts.
+   • Applied programming and data-handling techniques to support storage, retrieval, and organization of photo metadata.
+Canada Small Business Financing Program Analysis
+   • Analyzed Canada Small Business Financing Program data to study loan sizes, claim rates, business age, business type,
+    industry, and regional patterns.
+   • Used a complete analysis pipeline to investigate financial-risk trends and communicate findings relevant to
+    government-backed small-business lending.
+RentSafe AI: A Hybrid Approach to Detecting Online Rental Scams
+   • Designed a hybrid AI concept combining supervised machine-learning classification with symbolic rules to identify
+    suspicious rental listings and produce interpretable risk scores.
+   • Specified features from listing text, price, location, images, and account behavior; evaluated the approach using
+    accuracy, precision, recall, false-positive/false-negative analysis, bias, and accountability considerations.
+
+ TECHNICAL SKILLS
+ Programming & Data: Python, R, SQL, Git, GitHub
+ Data Science & Analytics: Machine Learning, Statistical Analysis, Optimization, Data Visualization, Database
+ Management
+ Tools: Gurobi, Tableau, Microsoft Excel, Azure ML
+
+ PROFESSIONAL EXPERIENCE
+Information Technology Intern                                         May 2026 - Aug 2026
+ Netqraf | Baku, Azerbaijan | Hybrid
+   • Delivered technical support for hardware, software, connectivity, operating systems, applications, and peripheral
+    devices.
+   • Collaborated with the IT team on troubleshooting, routine maintenance, software installation, and device setup.
+Marketing Volunteer                                                       Aug 2026 - Present
+ European Cultural Society of Calgary | Calgary, AB | Hybrid
+   • Support nonprofit marketing, outreach, promotional coordination, volunteer engagement, and event communications.
+
+Page 2
+
+ LEADERSHIP & CAMPUS INVOLVEMENT
+President, UCalgary Chapter - Azerbaijani Students' Association of Canada            Aug 2026 - Present
+   • Lead chapter operations, executive priorities, student engagement, and cultural/community initiatives.
+Secretary, UCalgary Chapter - Azerbaijani Students' Association of Canada           Aug 2025 - Aug 2026
+   • Managed meeting agendas, minutes, executive correspondence, records, and event coordination.
+Vice President - Irish Students' Association of UCalgary                              Sep 2025 - Apr 2026
+   • Supported executive operations, event planning, student engagement, and communication with campus partners.
+Science Mentor - University of Calgary                                         Aug 2026 - Present
+   • Mentor students through the Faculty of Science mentorship program, supporting university transition and engagement.
+CCPD Front Desk Peer Helper - University of Calgary                                 Sep 2026 - Present
+   • Support students and visitors at the CCPD front desk by answering general questions, providing directions, and
+    connecting them with appropriate campus resources.
+
+ HONORS, AWARDS & CERTIFICATIONS
+Faculty of Science Dean's List - University of Calgary                                                       Jul 2026
+Faculty of Science Dean's International Admission Scholarship - University of                Mar 2024
+Calgary
+President's Admission Scholarship - University of Calgary                               Mar 2024
+TCPS 2: CORE 2022 - Government of Canada                                                 Sep 2025
+Google Analytics Certification - Google                                       Nov 2025 - Nov 2026
+Azure ML - UCalgary Data Science and Machine Learning Club                                Feb 2026
+
+ LANGUAGES
+ Azerbaijani (Native/Bilingual), Russian (Native/Bilingual), English (Full Professional), Turkish (Full Professional),
+ French (Elementary)

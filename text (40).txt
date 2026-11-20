@@ -1,0 +1,337 @@
+Page 1
+
+Desjardins 2019 Data Breach:
+How Ineffective Security Led To The Largest Banking Data Breach
+In Canadian History
+
+1Background:
+
+Desjardins is a Canadian financial corporation that serves millions of Canadians holding
+critical banking information and personal information (social insurance numbers, legal
+names, emails, addresses). In 2019, it came to light that up to 9.7 million Canadians had their
+privacy compromised due to the actions of an employee working under Desjardins. This
+report was heavily influenced by the Office of the Privacy Commissioner of Canada's (OPC)
+investigation made on December 14, 2020.
+
+Two types of people were affected; Desjardins members (shareholders, direct clients) and
+Desjardins clients (affiliated with a Desjardins member)
+
+How the information was acquired:
+    ●​  Desjardin held its data in two settings, a ‘confidential’ and ‘non-confidential’.
+        Typically, non-confidential was accessible to all employees while confidential had
+       limited access.
+    ●​ Those with authorization could access the confidential information and transfer the
+       data to their own ‘user’ folder which would be contained in a shared directory
+       accessible to all employees.
+    ●​ The malicious employee was not authorized to handle or access the confidential data,
+       but with this system, they were able to copy the data from their colleagues with
+       authorization.
+    ●​ They would then save the data on their own ‘user’ folder where they would then
+       transfer the information onto a USB drive and could then misuse or disclose the data
+       without authorization.
+    ●​ The employee violated their employer contract on confidentiality.
+
+What was done with the personal information:
+
+
+
+1  (Desjardins: Background & Scope 6 - 14; Description of the overall architecture 28 -32)
+https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/202
+0/pipeda-2020-005/#fn2
+
+Page 2
+
+    ●​ The data was collected over the span of two years (2017 - May 2019) before being
+       detected.
+    ●​  This information was then sold to private lenders (and/or used in criminal activity).
+           ○​  Including an insurance and investment advisor who admitted to paying
+              $40,000 for the Desjardin members and using the information to solicit
+              favorable outcomes.2
+           ○​  In 2024, individuals suspected of identity theft, possessing and trafficking
+              personal information as well as fraud totalling to upwards of $8.9 million. 3
+
+Desjardin held access to the information with a faulty transportation & security of sensitive
+information which allowed one of their own employees to copy and share sensitive
+information to third parties.
+
+As a result of this large-scale data breach, Desjardins (in 2022) had to settle for a $200 million
+dollar class-action lawsuit to those who were affected, including re-imbursements of up to
+$50,000 to affected Desjardins members.
+
+Stakeholders & Power:
+
+This case has several key stakeholders with different levels of power, benefit, and risk. In
+terms of strict power, it is up to the OPC to recommend changes to Desjardins internal
+security but most of the responsibility (and in this case power), lies with Desjardins. In terms
+of individuals who held little to no power, it would be the Desjardins members and clients
+
+Who Benefits
+The malicious employee and their third parties benefited as the employee could make tens of
+thousands of dollars off the stolen identities, and those who purchased or obtained it could
+manipulate their customers or use them for their own personal benefit.
+
+
+
+
+
+2(Insurance and mortage brokers accused of paying for information)
+https://ici.radio-canada.ca/nouvelle/1744759/tribunal-administratif-francois-baillargeon-bouchard
+
+3 Suspects arrested for possessing personal information acquired from the 2019 data breach
+https://montreal.citynews.ca/2024/06/13/surete-du-quebec-arrest-four-more-in-desjardins-data-breach
+/
+
+Page 3
+
+Who Carries Risk
+The risk lies on not only Desjardins but all Desjardins members and clients affected by the
+data breach. Years later in 2024, additional suspects were arrested in relation to the data
+breach and when the public was asked how they felt, there were mixed feelings. Some
+responded how they still feel unprotected, specifically, they are concerned that Desjardins
+holds too much information and aren’t confident that they’ve done enough to protect it.
+Alternatively, some were confident in Desjardins and trusted them, citing how this could’ve
+happened to any bank and the new implementations reduce the risk of another breach.
+
+Who Had Decision Authority
+Desjardins held the decision authority while their clients had little to do with their own data.
+Desjardin was responsible for the protection / safeguard of their clients data and was
+supposed to only hold such data for its intended purpose (not indefinitely). So Desjardins
+bears primary accountability for its failure to uphold its clients' data.
+
+Who Lacked A Voice
+The public and businesses affected were not consulted by the Canadian Government or
+Desjardins during the investigation and compiling of the report. Based on what the
+government has released, their methodology of obtaining information and compiling their
+report was from “consult(ing) various open sources and reviewed the information provided
+by Desjardins”4. During the course of the 7700+ word investigation, the word ‘public’ or
+‘people’ is not mentioned once either in the context of consultation or potential solutions.5
+Instead, they only refer to the Desjardin clients and members affected in the form of
+compensation and future protection rather than how their data will be re-secured now.
+
+Through this case, Desjardins and its clients held a disproportionate share of the risks and
+benefits. Desjardins had little to gain by retaining its clients' sensitive data, while its clients
+had the most to lose in the result of a data breach. Not only that, the little mention of its
+clients themselves seems as though Desjardins and the OPC did not do a thorough
+investigation or response plan to address the most affected members of the data breach.
+
+
+
+
+4 (Desjardins: Methodology (20))
+https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/202
+0/pipeda-2020-005/#fn2
+5 Over the course of the whole document the word public is mentioned ONLY in footnotes and people
+is mentioned ONCE only in the context of the individuals responsible of the data breach.
+
+Page 4
+
+Ethical Analysis:
+
+Quebec’s version of PIPEDA (Act Respecting the Protection of Personal Information in the Private
+Sector) was considered but for businesses that operate on the federal level (including banks
+such as Desjardins) regular PIPEDA still would apply.
+
+The PIPEDA topics violated by Desjardins (as identified by the OPC) are:
+     1.​ Accountability
+     2.​ Limiting Use, Retention, and Disclosure of Data
+     3.​ Implementing Safeguards
+
+
+1. Accountability
+Accountability under PIPEDA entails that “an organization (Desjardins) is responsible for
+the personal information under its control”. Desjardins through this internal data breach is
+still responsible as it was under their control, safeguarded under their security measures.
+Specifically, Desjardins violated principles 4.1.3, 4.1.4(a), and 4.1.4(c). These three principles
+describe how Desjardins is responsible for not just the information, but its transfer as well
+(4.1.3). In addition, they are also responsible for keeping staff trained in the implemented
+procedures to safely handle the data (4.1.4). As this data breach was internal through a
+mismanagement of its transfer or information between departments by its own staff shows
+how the principles above were violated.
+
+The accountability does not fall onto the malicious employee alone as they were only enabled
+by the faulty security system Desjardin had in place. Desjardins remained accountable
+because it was the party that collected, stored, and managed the data. Ethically under
+PIPEDA, an organization cannot shift blame entirely onto one employee when it failed to
+build a system capable of preventing or detecting foreseeable misuse earlier.
+
+2. Limiting Use, Retention, and Disclosure of Data
+During the investigation conducted by the OPC, they found that Desjardins were in the
+process of implementing retention periods (how long they could keep the data). Current
+policies were also not fully completed which caused some sensitive data that was considered
+‘inactive’ to be visible decades after they were collected.6 This is in direct violation of
+
+
+6 (Desjardins: Issue 2 (89;92))
+
+Page 5
+
+PIPEDA Principle 4.5.3 which outlines that procedures should be implemented to destroy,
+erase, or anonymize data that isn’t required for its intended purpose (the inactive accounts).
+Of the 9.7 million individuals whose data was collected, 3.9 million7 of them were believed to
+be considered inactive. That is nearly 4 million individuals whose data should not have been
+in Desjardins system regardless of the breach. This was negligent on the part of Desjardins
+as if they wanted to keep a record of the information, they at the very least should have
+anonymised it.
+
+Desjardins also had an ethical duty to limit how much sensitive information was available,
+how long it was kept, and who could access it. By allowing confidential and non-confidential
+data to be handled in a way that increased exposure, the organization increased the scale of
+harm when the breach happened.
+
+3. Implementing Safeguards
+As mentioned previously, the architecture of Desjardins system was built in a way that could
+be exploited. An employee without proper authorization was able to access information not
+normally accessible for their security clearance which directly violates PIPEDA Principle 7 -
+Safeguards. More specifically, its method to protect personal information (PIPEDA Principle
+4.7.3)8. The specific violation would be "organizational measures, for example, security
+clearance and limiting access on a ‘need-to-know’ basis” (Principle 4.7.3(b)). Unauthorized
+personnel accessing information they are not privy to is in direct violation of this principle
+which Desjardins violated.
+
+One of Desjardins’ largest blunders was that it did not implement / put into practice the
+standard procedures they should’ve done. They had numerous policies and procedures that if
+implemented properly, would have never allowed for the information to be either identifiable
+or even accessible to unauthorised personnel.
+
+An additional violation that was briefly mentioned by the OPC was PIPEDA Principle 4.7.4
+which discusses employee awareness of confidentiality of personal information. Earlier in
+the report, it was stated that Desjardins work environment was one of trust. The malicious
+employee was seen as ‘a skilled and high performing employee’. While this is good for a
+workplace as both we and OPC think, it is too idealistic for every employee to follow the
+rules.
+
+7 (Desjardins: Issue 2 (89))
+8 https://laws-lois.justice.gc.ca/eng/acts/p-8.6/page-7.html
+
+Page 6
+
+Trade-Offs:
+
+This case involves several trade-offs that cannot be fully resolved, even with stronger
+reforms.
+
+First, Desjardins needed to make personal data accessible enough for employees to carry out
+legitimate banking, customer-service, and administrative functions, but increasing
+accessibility also increased the risk of insider misuse. In a large financial institution, some
+employee access is necessary for normal service delivery. But in the case of Desjardins, they
+relied too heavily on the supposed ‘climate’ of trust’ rather than preparing and preventing
+the worst case scenario. Tighter access controls and stricter monitoring on data transfers
+would reduce the chance of another breach, yet these measures may also slow down daily
+operations and make legitimate work less efficient.
+
+Second, retaining large amounts of personal information can support fraud prevention,
+service continuity, and business operations, but keeping sensitive data for too long increases
+the scale of harm if a breach occurs. Inactive accounts, while may be essential in
+record-keeping, should not have been transferred between members of the marketing
+department as we don’t see why that would be needed if they are not ongoing businesses or
+accounts. This is especially important in this case because inactive individuals’ data was still
+being retained, which meant the breach affected people whose information may no longer
+have been needed for ongoing business purposes.
+
+Third, stronger monitoring of employees may improve accountability and detection of
+suspicious activity, but it also creates concerns about workplace surveillance, trust, and
+employee autonomy. As mentioned before, the level of camaraderie between the Desjardins
+marketing department, while commendable, left too many errors and breaches in procedure
+which enabled a malicious employee to exploit their lack of vigilance.
+
+Finally, compensation and credit-monitoring measures can help reduce some of the harms
+suffered by affected individuals, but they cannot fully reverse the long-term privacy and
+identity-theft risks once the information has already been exposed. In other words,
+post-breach support can reduce damage, but it cannot fully restore the privacy that was lost.9
+
+
+
+
+
+9 This is covered in more depth in Residual Risk
+
+Page 7
+
+Alternatives & Mitigation:
+
+Several realistic changes could have reduced the likelihood and impact of this breach.
+Desjardins should have kept confidential and non-confidential data strictly separate, limited
+employee access to only what was necessary for their role, and monitored unusual copying or
+transfer activity more closely. This is especially important because the OPC found that
+confidential information could be transferred into shared user folders that were accessible
+more broadly than they should have been, which increased the risk of unauthorized internal
+access. It also should have conducted stronger audits, reviewed access permissions regularly,
+and retained sensitive personal information for shorter periods of time. The OPC also found
+that Desjardins had not fully implemented appropriate retention practices, which meant
+some inactive individuals’ data remained in the system longer than necessary. After the
+breach, mitigation should not have focused only on compensation, but also on long-term
+support such as fraud recovery, ongoing credit protection, and clearer communication with
+affected individuals. While Desjardins did set some compensation in place for those affected,
+we feel as though it's not doing enough to recover the data that was lost. These changes
+would not remove insider risk completely, but they would have made the breach harder to
+carry out and easier to detect earlier.
+
+The OPC’s response mainly addresses the problem of weak internal safeguards at
+Desjardins. Its recommendations pushed Desjardins to strengthen access controls, improve
+monitoring, tighten retention practices, and increase accountability for how sensitive
+personal information is handled. These changes help reduce the risk of another similar
+insider breach by making unauthorized access and large-scale data extraction harder to carry
+out and easier to detect. They also provide some support to affected individuals through
+compensation, credit monitoring, and other protection measures, which helps address part
+of the immediate harm caused by the breach. More specifically, the OPC found
+contraventions related to accountability, safeguards, and retention, so its response was
+mainly directed at correcting those internal weaknesses.
+
+Recommendations:
+
+Desjardins should implement stricter access controls by enforcing a true “need-to-know”
+system where employees can only access data required for their specific role. Confidential
+information should be kept strictly separate from general employee directories, and unusual
+copying, downloading, or transfer activity should be monitored more closely. Desjardins
+
+Page 8
+
+should also shorten retention periods for inactive or unnecessary personal data and improve
+regular audits of internal data-handling practices. At the same time, regulators such as the
+OPC should continue external oversight to ensure that these safeguards are not only written
+in policy, but actually followed in practice. In addition to technical reforms, Desjardins
+should provide long-term support for affected individuals through continued credit
+protection, fraud assistance, and transparent communication about ongoing risks.
+
+Residual Risks:
+
+Although these changes and recommendations may improve the security of Desjardins’
+internal system, this doesn’t mean that all the data that had been shared prior has
+disappeared. It is still unknown as to how many other people acquired portions of the stolen
+information, but that still lies with Desjardins’ failure to implement safeguards and holding
+sensitive information for longer than required. The fault also lies with Desjardins and the
+OPC for failing to come up with a solution to recover or re-anonymize the data that had been
+leaked.
+
+The aftermath of this can still be felt today as more and more suspects are arrested in
+connection to this case.10 Recently in 2025, there was a resurgence of the stolen information
+circulating the internet, specifically the dark web.11 This shows that the effects of the
+Desjardins 2019 data breach, while mitigated now, still has not been fully resolved.
+
+
+
+
+
+10 ([2026] One of Quebec's “Most Wanted” arrested in Spain in connection to the Desjardin data
+breach)
+https://globalnews.ca/news/11601428/canadian-fugitive-arrested-spain-desjardins-data-leak/
+11 (French Article on how Desjardins stolen information resurfaced on the dark web)
+https://www.lapresse.ca/actualites/justice-et-faits-divers/2025-10-20/fuite-de-renseignements-chez-de
+sjardins/les-donnees-d-un-million-de-quebecois-refont-surface-sur-le-dark-web.php
+
+Page 9
+
+References:
+
+     1.​ Office of the Privacy Commissioner of Canada. (2020, December 14). Investigation into
+        Desjardins’ compliance with PIPEDA following a breach of personal information between
+       2017 and 2019 (PIPEDA Findings #2020-005).
+     2.​ Radio-Canada. (2020). Insurance and mortgage brokers accused of paying for information.
+     3.​ CityNews Montreal. (2024, June 13). Suspects arrested for possessing personal information
+        acquired from the 2019 data breach.
+     4.​ Government of Canada, Justice Laws Website. (n.d.). Personal Information Protection and
+        Electronic Documents Act.
+     5.​ Global News. (2026). One of Quebec’s “Most Wanted” arrested in Spain in connection to the
+        Desjardins data leak.
+     6.​ La Presse. (2025, October 20). Les données d’un million de Québécois refont surface sur le
+       dark web.
